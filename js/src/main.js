@@ -19,8 +19,8 @@ async function main() {
     return;
   }
 
-  // 이거 풀면 스크롤 안되게 막을 수 있음
-  // lockBodyScroll();
+  // 이거 주석처리 안하면 스크롤 안되게 막을 수 있음
+  lockBodyScroll();
 
   const speechController = new SpeechController(speechControlButton$);
   let clicked = false;
