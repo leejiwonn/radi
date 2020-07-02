@@ -2,6 +2,7 @@ import { recognizeSpeech, SpeechController, supportsSpeechRecognition } from './
 import { playAudioWhenAvailable } from './audio';
 import { sleep } from './util';
 import { lockBodyScroll, unlockBodyScroll } from './body-scroll';
+// import { scrollAnimation } from './scroll-animation';
 import { scrollDownAnimation } from './rx';
 import { takeUntil } from 'rxjs/operators';
 import { fromEvent, merge } from 'rxjs';
@@ -20,7 +21,7 @@ async function main() {
   }
 
   // 이거 주석처리 안하면 스크롤 안되게 막을 수 있음
-  // lockBodyScroll();
+  lockBodyScroll();
 
   const speechController = new SpeechController(speechControlButton$);
   let clicked = false;
@@ -53,13 +54,14 @@ async function main() {
         if (correct) {
           speechController.destroy();
           unlockBodyScroll();
+          scrollAnimation();
 
           mainTitle$.style.opacity = '0';
           mainTitleError$.classList.remove('wiggle');
           mainTitleError$.style.opacity = '0';
 
           await sleep(1500);
-          mainTitle$.innerHTML = '반가워! 내이름은 라디야. 지금부터 나를 소개할게!';
+          mainTitle$.innerHTML = '반가워! 내 이름은 라디야. 지금부터 나를 소개할게!';
           mainTitle$.style.opacity = '1';
 
           playAudioWhenAvailable(voice2$, () => {
@@ -89,28 +91,7 @@ async function main() {
     });
   });
 
-  // 이지원 여기서 작업해라 !!!
-  // (function () {
-  //
-  //   var controller = new ScrollMagic.Controller();
-  //
-  //   var tween1 = TweenMax.to('.big-title', 0.5, {
-  //     scale: 2.5,
-  //     rotation: 360,
-  //     x: 130
-  //   });
-  //
-  //   var scene1 = new ScrollMagic.Scene({
-  //       triggerElement: ".left-box",
-  //       duration: "100%"
-  //   })
-  //   .setTween(tween1)
-  //   .addTo(controller)
-  //   .addIndicators({
-  //       name: "1"
-  //   });
-  //
-  // }())
+  // 테스트 애니메이션은 여기서 작업하기 !!!
 
 }
 
