@@ -54,7 +54,6 @@ async function main() {
         if (correct) {
           speechController.destroy();
           unlockBodyScroll();
-          scrollAnimation();
 
           mainTitle$.style.opacity = '0';
           mainTitleError$.classList.remove('wiggle');

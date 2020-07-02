@@ -9,126 +9,6 @@ body {
   overflow: hidden;
 }
 
-.speech-control,
-.speech-control-pulse {
-  background: #FFFFFF;
-  border-radius: 100%;
-  width: 100%;
-  height: 100%;
-}
-
-.speech-control-container {
-  width: 300px;
-  height: 239px;
-  position: relative;
-}
-
-.speech-control-pulse {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background-color: rgb(223, 223, 223);
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.speech-control {
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 1);
-  /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); */
-  z-index: 2;
-  position: absolute;
-  transition: background-color 750ms;
-}
-
-.speech-control-container.listen .speech-control {
-  background-color: #23507c;
-  cursor: default;
-}
-
-.speech-control-container.record .speech-control {
-  background-color: #E53E3E;
-  cursor: default;
-}
-
-.speech-control > img{
-  width: 100%;
-  height: 100%;
-}
-
-/*
-.speech-control > i {
-  color: #23507c;
-  font-size: 100px;
-  margin: auto;
-  display: block;
-  text-align: center;
-  line-height: 190px;
-  transition: color 750ms;
-}
-
-.speech-control-container.listen i {
-  color: #FFF;
-}
-
-.speech-control-container.record i {
-  color: #FFF;
-}
-*/
-
-.speech-control-container.listen .speech-control-pulse {
-  -webkit-animation: pulse 1.3s infinite;
-  animation: pulse 1.3s infinite;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-  25% {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-  50% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-  25% {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-  50% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
 #wrapper {
   background-color: #ececec;
 }
@@ -139,20 +19,25 @@ body {
   margin: 0 auto;
 }
 
+/* ----- page 1 ----- */
+
 .page-1{
   position: relative;
   background-color: #fff;
   height: 100vh;
   min-height: auto;
 }
+
 .page-1 .text-box{
   position: relative;
   top: 30px;
   font-size: 20px;
 }
+
 .full-height {
   height: 100%;
 }
+
 .center {
   display: flex;
   flex-direction: column;
@@ -199,7 +84,7 @@ body {
   width: 5px;
   margin: 0 2px;
   border-radius: 4px;
-  animation: soundbar-animation 0ms -600ms linear infinite alternate;
+  animation: soundbar-animation 0ms -800ms linear infinite alternate;
 }
 
 @keyframes soundbar-animation {
@@ -209,18 +94,18 @@ body {
   }
   100% {
     opacity: 1;
-    height: 70px;
+    height: 50px;
   }
 }
 
-.soundbars-bar:nth-child(1)  { animation-duration: 474ms; }
-.soundbars-bar:nth-child(2)  { animation-duration: 433ms; }
-.soundbars-bar:nth-child(3)  { animation-duration: 407ms; }
-.soundbars-bar:nth-child(4)  { animation-duration: 458ms; }
-.soundbars-bar:nth-child(5)  { animation-duration: 400ms; }
-.soundbars-bar:nth-child(6)  { animation-duration: 427ms; }
-.soundbars-bar:nth-child(7)  { animation-duration: 441ms; }
-.soundbars-bar:nth-child(8)  { animation-duration: 419ms; }
+.soundbars-bar:nth-child(1)  { animation-duration: 624ms; }
+.soundbars-bar:nth-child(2)  { animation-duration: 583ms; }
+.soundbars-bar:nth-child(3)  { animation-duration: 557ms; }
+.soundbars-bar:nth-child(4)  { animation-duration: 608ms; }
+.soundbars-bar:nth-child(5)  { animation-duration: 550ms; }
+.soundbars-bar:nth-child(6)  { animation-duration: 577ms; }
+.soundbars-bar:nth-child(7)  { animation-duration: 591ms; }
+.soundbars-bar:nth-child(8)  { animation-duration: 569ms; }
 
 .main-title {
   display: block;
@@ -349,6 +234,8 @@ body {
   }
 }
 
+/* ----- page 2 ----- */
+
 .page-2 {
   background-color: #000000;
 }
@@ -407,6 +294,8 @@ body {
   width: 477px;
 }
 
+/* ----- page 3 ----- */
+
 .page-3 {
   position: relative;
   display: flex;
@@ -443,6 +332,8 @@ body {
 .page-3-ball.orange { right: 81px; bottom: 298px; width: 254px; height: 254px; background-color: #f36e36; }
 .page-3-ball.yellow { right: 310px; bottom: 243px; width: 82px; height: 82px; background-color: #ffc400; }
 
+/* ----- page 4 ----- */
+
 .page-4 {
   position: relative;
 }
@@ -472,6 +363,8 @@ body {
   bottom: 0;
   z-index: 1;
 }
+
+/* ----- page 5 ----- */
 
 .page-5 {
   background-color: white;
@@ -534,6 +427,14 @@ body {
   color: #ffffff;
 }
 
+/* ----- page 6 ----- */
+
+
+/* ----- page 7 ----- */
+
+
+/* ----- page 8 ----- */
+
 .page-8 {
   background-color: white;
 }
@@ -565,3 +466,8 @@ body {
   height: 660px;
   margin: 40px auto 0 auto;
 }
+
+/* ----- page 9 ----- */
+
+
+/* ----- page 10 ----- */
