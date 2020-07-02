@@ -336,6 +336,10 @@ body {
 
 .page-4 {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
 }
 
 .page-4-background-image-left {
@@ -356,12 +360,32 @@ body {
 
 .page-4-mask {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: 1;
+}
+
+.page-4-textbox{
+  width: 80%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  font-size: 64px;
+  font-weight: 200;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+}
+
+.page-4-textbox > span{
+  position: absolute;
+  top: 0;
+  left: calc(50% - 320px);
+  font-weight: 600;
+  color: #ffbd09;
 }
 
 /* ----- page 5 ----- */
@@ -429,9 +453,49 @@ body {
 
 /* ----- page 6 ----- */
 
+.page-6 {
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-6-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.47;
+  letter-spacing: -2.88px;
+  text-align: center;
+  color: #fff;
+}
 
 /* ----- page 7 ----- */
 
+.page-7 {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-7-circle {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-7-circle > li {
+  width: 262px;
+  height: 262px;
+  background-color: #ffbd09;
+  font-size: 36px;
+  letter-spacing: -1.62px;
+  text-align: center;
+  color: #fff;
+  border-radius: 200px;
+}
 
 /* ----- page 8 ----- */
 
@@ -471,3 +535,34 @@ body {
 
 
 /* ----- page 10 ----- */
+
+.page-10 {
+  background-color: #000;
+}
+
+.page-10-title {
+  margin: 0;
+  padding-top: 152px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.48;
+  text-align: center;
+  color: #fff;
+}
+
+.page-10-subtitle {
+  margin: 26px 0 0 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: -1.08px;
+  text-align: center;
+  color: #fff;
+}
+
+.page-10-image {
+  display: block;
+  width: 802px;
+  height: 596px;
+  margin: 100px auto 0 auto;
+}
