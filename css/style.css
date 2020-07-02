@@ -98,14 +98,14 @@ body {
   }
 }
 
-.soundbars-bar:nth-child(1)  { animation-duration: 624ms; }
+.soundbars-bar:nth-child(1)  { animation-duration: 0ms; }
 .soundbars-bar:nth-child(2)  { animation-duration: 483ms; }
 .soundbars-bar:nth-child(3)  { animation-duration: 557ms; }
 .soundbars-bar:nth-child(4)  { animation-duration: 508ms; }
 .soundbars-bar:nth-child(5)  { animation-duration: 550ms; }
 .soundbars-bar:nth-child(6)  { animation-duration: 477ms; }
 .soundbars-bar:nth-child(7)  { animation-duration: 591ms; }
-.soundbars-bar:nth-child(8)  { animation-duration: 469ms; }
+.soundbars-bar:nth-child(8)  { animation-duration: 0ms; }
 
 .main-title {
   display: block;
