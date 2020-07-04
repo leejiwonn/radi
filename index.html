@@ -52,15 +52,15 @@
   <section class="page page-2">
     <div class="page-2-wrapper">
       <div class="page-2-left">
-        <p class="page-2-left-p">안녕하세요.</p>
-        <p class="page-2-left-p" style="margin-top: 54px;">
+        <p class="page-2-left-p ani-2-1">안녕하세요.</p>
+        <p class="page-2-left-p ani-2-2" style="margin-top: 54px;">
           저는 ADHD 아동을
           <br />
           빛나게 하는
           <br />
           인공지능 로봇 <strong>라디</strong> 입니다.
         </p>
-        <div class="page-2-feature" style="margin-top: 84px;">
+        <div class="page-2-feature ani-2-3" style="margin-top: 84px;">
           <img alt="" src="img/ico_talk.svg" class="page-2-feature-image" />
           <div class="page-2-feature-text">
             저는 아이와
@@ -68,7 +68,7 @@
             눈을 맞춰 대화하며
           </div>
         </div>
-        <div class="page-2-feature" style="margin-top: 70px;">
+        <div class="page-2-feature ani-2-4" style="margin-top: 70px;">
           <img alt="" src="img/ico_think.svg" class="page-2-feature-image" />
           <div class="page-2-feature-text">
             아이의 생각을 분석해
@@ -91,7 +91,7 @@
   </section>
 
   <section class="page page-3">
-    <h1 class="page-3-title">
+    <h1 class="page-3-title page-3-fade">
       라디는 <strong>ADHD 아동의 만족</strong>을 지지합니다.
     </h1>
     <div class="page-3-ball blue"></div>
@@ -105,25 +105,29 @@
     <div class="page-4-mask"></div>
     <img alt="" src="img/4001_left@2x.png" class="page-4-background-image-left" />
     <img alt="" src="img/4001_right@2x.png" class="page-4-background-image-right" />
-    <div class="page-4-textbox">
-      <p>
+    <div class="page-4-textbox page-4-fade">
+      <span>충동적</span>
+      <p class="ani-4-1">
         내 아이가&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         으로 원하는 것만 한다는 것
       </p>
-      <span>충동적</span>
+      <p class="ani-4-2">
+        다시 말해&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        으로 엄청난 집중력을 보이는 것
+      </p>
     </div>
   </section>
 
   <section class="page page-5">
-    <h1 class="page-5-title">
+    <h1 class="page-5-title page-5-fade">
       라디는 내 아이의 행동을 <strong>지지</strong>하고
       <br />
       자신을 사랑하도록 <strong>응원</strong>합니다.
     </h1>
-    <p class="page-5-subtitle">
+    <p class="page-5-subtitle page-5-fade">
       아이의 눈높이에서 경청하고 공감하는것, 그리고 칭찬과 격려를 통해 스스로 잘하는 것과 좋아하는것을 지지합니다.
     </p>
-    <div class="page-5-wording">
+    <div class="page-5-wording page-5-fade">
       우와, 지훈이는 ㅇㅇ엄청 잘한다! 나도 지훈이한테 배우고싶어!
     </div>
     <img
@@ -135,58 +139,26 @@
   </section>
 
   <section class="page page-6">
-    <p class="page-6-title">
+    <p class="page-6-title page-6-fade">
       산만하고 충동적인 이유는<br/>
       에너지가 넘치기 때문입니다.
     </p>
-    <ul class="page-6-slide-1">
-      <li>
-        <img
-          alt=""
-          src=""
-          srcset=""
-          class="page-6-image"
-        />
-      </li><li>
-        <img
-          alt=""
-          src=""
-          srcset=""
-          class="page-6-image"
-        />
-      </li><li>
-        <img
-          alt=""
-          src=""
-          srcset=""
-          class="page-6-image"
-        />
-      </li>
-    </ul>
-    <ul class="page-6-slide-2">
-      <li>
-        <img
-          alt=""
-          src=""
-          srcset=""
-          class="page-6-image"
-        />
-      </li><li>
-        <img
-          alt=""
-          src=""
-          srcset=""
-          class="page-6-image"
-        />
-      </li><li>
-        <img
-          alt=""
-          src=""
-          srcset=""
-          class="page-6-image"
-        />
-      </li>
-    </ul>
+    <div class="page-6-slide page6-slide-2">
+      <img
+        alt="왼쪽 이미지"
+        src="img/006_img01_bg@2x.png"
+        srcset="img/006_img01_bg.png 1x, img/006_img01_bg@2x.png 2x, 006_img01_bg@3x.png 3x"
+        class="page-6-image"
+      />
+    </div>
+    <div class="page-6-slide page6-slide-1">
+      <img
+        alt="오른쪽 이미지"
+        src="img/006_img02_bg@2x.png"
+        srcset="img/006_img02_bg.png 1x, img/006_img02_bg@2x.png 2x, 006_img02_bg@3x.png 3x"
+        class="page-6-image"
+      />
+    </div>
   </section>
 
   <section class="page page-7">
@@ -372,7 +344,7 @@
   </audio>
 
   <!-- script -->
-  <script src="js/src/parallax/TweenMax.min.js"></script>
+  <script src="js/src/parallax/gsap.min.js"></script>
   <script src="js/src/parallax/ScrollMagic.min.js"></script>
   <script src="js/src/parallax/animation.gsap.min.js"></script>
   <script src="js/src/parallax/debug.addIndicators.min.js"></script>
