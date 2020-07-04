@@ -16,7 +16,7 @@ export function recognizeSpeech(words, callback) {
 
     try {
       const transcript = results[0][0].transcript.toLowerCase().replace(/\s/g, '');
-      const correct = words.some(x => x === transcript);
+      const correct = words.some(x => transcript.indexOf(x) > -1);
       console.log(transcript, correct);
 
       if (correct) {
@@ -40,6 +40,13 @@ export function recognizeSpeech(words, callback) {
     recognition.stop();
     recognition = null;
     callback(event.error);
+  };
+
+  return () => {
+    if (recognition != null) {
+      recognition.stop();
+      recognition = null;
+    }
   };
 }
 
