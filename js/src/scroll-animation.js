@@ -1,13 +1,12 @@
 export function scrollAnimation() {
 
 var controller = new ScrollMagic.Controller();
-  
+
 /* p2 텍스트 애니메이션 */
+
 var tweenP2 = gsap.timeline()
-  .fromTo(".ani-2-1", {y: 20, opacity: 0, duration: 0.5, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 0.5, ease: "sine.inOut"}, "with")
-  .fromTo(".ani-2-2", {y: 20, opacity: 0, duration: 0.5, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 0.5, ease: "sine.inOut", delay: 0.5}, "with")
-  .fromTo(".ani-2-3", {y: 20, opacity: 0, duration: 0.5, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 0.5, ease: "sine.inOut", delay: 1}, "with")
-  .fromTo(".ani-2-4", {y: 20, opacity: 0, duration: 0.5, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 0.5, ease: "sine.inOut", delay: 1.5}, "with");
+  .fromTo(".ani-2-1", {y: 20, opacity: 0, duration: 0.8, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".ani-2-2", {opacity: 0, duration: 0.8, ease: "sine.inOut"}, {opacity: 1, duration: 1, ease: "sine.inOut", delay: 1}, "with");
   
 var sceneP2 = new ScrollMagic.Scene({
   triggerElement: ".page-2-wrapper",
@@ -77,7 +76,8 @@ var sceneP5 = new ScrollMagic.Scene({
 
 /* p6 기본 및 이미지 애니메이션 */
 
-var tweenP61 = gsap.fromTo(".page-6-fade", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut"});
+var tweenP61 = gsap.timeline()
+  .fromTo(".page-6-fade", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut"}).to(".p9-ani-1", {y: 0, duration: 0.1, ease: "sine.inOut", delay: 0.1}, "with")
 
 var sceneP61 = new ScrollMagic.Scene({
   triggerElement: ".page-6",
@@ -90,8 +90,8 @@ var sceneP61 = new ScrollMagic.Scene({
 });
 
 var tweenP62 = gsap.timeline()
-  .fromTo(".page6-slide-1", {x: -1000, opacity: 0, duration: 1, ease: "sine.inOut"}, {x: 0, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with")
-  .fromTo(".page6-slide-2", {x: 1000, opacity: 0, duration: 1, ease: "sine.inOut"}, {x: 0, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with");
+  .to(".page6-slide-1", {x: 1200, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with")
+  .to(".page6-slide-2", {x: -1200, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with");
 
 var sceneP62 = new ScrollMagic.Scene({
   triggerElement: ".page-6",
@@ -104,11 +104,11 @@ var sceneP62 = new ScrollMagic.Scene({
 });
 
 var tweenP63 = gsap.timeline()
-  .fromTo(".page6-slide-1", {x: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, {x: -1000, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
-  .fromTo(".page6-slide-2", {x: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, {x: 1000, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
+  .to(".page6-slide-1", {x: 0, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
+  .to(".page6-slide-2", {x: 0, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
   .fromTo(".p6-ani-1", {opacity: 1, duration: 1, ease: "sine.inOut"}, {opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
-  .fromTo(".page-6-textbox", {y: 0, duration: 1, ease: "sine.inOut"}, {y: 200, duration: 0.1, ease: "sine.inOut", delay: 1.3}, "with")
-  .fromTo(".p6-ani-2", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 1.3, ease: "sine.inOut", delay: 1.5}, "with");
+  .fromTo(".page-6-textbox", {duration: 1, ease: "sine.inOut"}, {duration: 0.1, ease: "sine.inOut", delay: 1}, "with")
+  .fromTo(".p6-ani-2", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut", delay: 0.5}, "with");
 
 var sceneP63 = new ScrollMagic.Scene({
   triggerElement: ".p6-trigger1",
@@ -218,20 +218,6 @@ var sceneP94 = new ScrollMagic.Scene({
 .addIndicators({
     name: "94"
 });
-
-/*
-var tweenP92 = gsap.fromTo(".page-9-content-box", {y: 0, duration: 1, ease: "sine.inOut"}, {y: -2310, duration: 0.8, ease: "sine.inOut"});
-
-var sceneP92 = new ScrollMagic.Scene({
-  triggerElement: ".page-9",
-  duration: 1300
-})
-.setTween(tweenP92)
-.addTo(controller)
-.addIndicators({
-    name: "92"
-});
-*/
 
 /* p10 기본 애니메이션 */
 
