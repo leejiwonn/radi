@@ -104,11 +104,14 @@ var sceneP62 = new ScrollMagic.Scene({
 });
 
 var tweenP63 = gsap.timeline()
-  .fromTo(".page6-slide-1", {x: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, {x: -1000, opacity: 0, duration: 1.3, ease: "sine.inOut", delay: 0.5}, "with")
-  .fromTo(".page6-slide-2", {x: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, {x: 1000, opacity: 0, duration: 1.3, ease: "sine.inOut", delay: 0.5}, "with");
+  .fromTo(".page6-slide-1", {x: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, {x: -1000, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
+  .fromTo(".page6-slide-2", {x: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, {x: 1000, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
+  .fromTo(".p6-ani-1", {opacity: 1, duration: 1, ease: "sine.inOut"}, {opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
+  .fromTo(".page-6-textbox", {y: 0, duration: 1, ease: "sine.inOut"}, {y: 200, duration: 0.1, ease: "sine.inOut", delay: 1.3}, "with")
+  .fromTo(".p6-ani-2", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 1.3, ease: "sine.inOut", delay: 1.5}, "with");
 
 var sceneP63 = new ScrollMagic.Scene({
-  triggerElement: ".page6-slide-2",
+  triggerElement: ".p6-trigger1",
   triggerhook: 0.8
 })
 .setTween(tweenP63)
@@ -123,7 +126,7 @@ var tweenP7 = gsap.timeline()
   .fromTo(".p7-ani-1", {y: 20, opacity: 0, duration: 0.8, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, "with")
   .fromTo(".p7-ani-2", {y: 20, opacity: 0, duration: 0.8, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 1, ease: "sine.inOut", delay: 0.4}, "with")
   .fromTo(".p7-ani-3", {y: 20, opacity: 0, duration: 0.8, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 1, ease: "sine.inOut", delay: 0.8}, "with")
-  .fromTo(".p7-ani-4", {y: 20, opacity: 0, duration: 0.8, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 1, ease: "sine.inOut", delay: 1.2}, "with")
+  .fromTo(".p7-ani-4", {y: 20, opacity: 0, duration: 0.8, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 1, ease: "sine.inOut", delay: 1.2}, "with");
 
 var sceneP7 = new ScrollMagic.Scene({
   triggerElement: ".page-7-circle",
@@ -151,17 +154,84 @@ var sceneP8 = new ScrollMagic.Scene({
 
 /* p9 기본 애니메이션 */
 
-var tweenP9 = gsap.fromTo(".page-9-slide", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut"});
+var tweenP91 = gsap.timeline()
+  .fromTo(".page-9-fade", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut", delay: 0.1}, "with")
+  .to(".p9-ani-1", {y: 0, duration: 0.1, ease: "sine.inOut"}, "with")
+  .to(".p9-ani-2", {y: 0, duration: 0.1, ease: "sine.inOut"}, "with")
+  .to(".p9-ani-3", {y: 0, duration: 0.1, ease: "sine.inOut"}, "with")
+  .to(".p9-ani-4", {y: 0, duration: 0.1, ease: "sine.inOut"}, "with");
 
-var sceneP9 = new ScrollMagic.Scene({
+var sceneP91 = new ScrollMagic.Scene({
   triggerElement: ".page-9",
   triggerhook: 0.8
 })
-.setTween(tweenP9)
+.setTween(tweenP91)
 .addTo(controller)
 .addIndicators({
-    name: "9"
+    name: "91"
 });
+
+var tweenP92 = gsap.timeline()
+  .fromTo(".p9-ani-1", {y: 0, duration: 0.8, ease: "sine.inOut"}, {y: -800, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-2", {y: 0, duration: 0.8, ease: "sine.inOut"}, {y: -800, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-3", {y: 0, duration: 0.8, ease: "sine.inOut"}, {y: -800, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-4", {y: 0, duration: 0.8, ease: "sine.inOut"}, {y: -800, duration: 1, ease: "sine.inOut"}, "with");
+
+var sceneP92 = new ScrollMagic.Scene({
+  triggerElement: ".p9-trigger1",
+  triggerhook: 0.8
+})
+.setTween(tweenP92)
+.addTo(controller)
+.addIndicators({
+    name: "92"
+});
+
+var tweenP93 = gsap.timeline()
+  .fromTo(".p9-ani-1", {y: -800, duration: 0.8, ease: "sine.inOut"}, {y: -1550, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-2", {y: -800, duration: 0.8, ease: "sine.inOut"}, {y: -1550, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-3", {y: -800, duration: 0.8, ease: "sine.inOut"}, {y: -1550, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-4", {y: -800, duration: 0.8, ease: "sine.inOut"}, {y: -1550, duration: 1, ease: "sine.inOut"}, "with");
+
+var sceneP93 = new ScrollMagic.Scene({
+  triggerElement: ".p9-trigger2",
+  triggerhook: 0.8
+})
+.setTween(tweenP93)
+.addTo(controller)
+.addIndicators({
+    name: "93"
+});
+
+var tweenP94 = gsap.timeline()
+  .fromTo(".p9-ani-1", {y: -1550, duration: 0.8, ease: "sine.inOut"}, {y: -2300, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-2", {y: -1550, duration: 0.8, ease: "sine.inOut"}, {y: -2300, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-3", {y: -1550, duration: 0.8, ease: "sine.inOut"}, {y: -2300, duration: 1, ease: "sine.inOut"}, "with")
+  .fromTo(".p9-ani-4", {y: -1550, duration: 0.8, ease: "sine.inOut"}, {y: -2300, duration: 1, ease: "sine.inOut"}, "with");
+
+var sceneP94 = new ScrollMagic.Scene({
+  triggerElement: ".p9-trigger3",
+  triggerhook: 0.8
+})
+.setTween(tweenP94)
+.addTo(controller)
+.addIndicators({
+    name: "94"
+});
+
+/*
+var tweenP92 = gsap.fromTo(".page-9-content-box", {y: 0, duration: 1, ease: "sine.inOut"}, {y: -2310, duration: 0.8, ease: "sine.inOut"});
+
+var sceneP92 = new ScrollMagic.Scene({
+  triggerElement: ".page-9",
+  duration: 1300
+})
+.setTween(tweenP92)
+.addTo(controller)
+.addIndicators({
+    name: "92"
+});
+*/
 
 /* p10 기본 애니메이션 */
 
@@ -179,7 +249,7 @@ var sceneP10 = new ScrollMagic.Scene({
 
 /* p11 기본 애니메이션 */
 
-var tweenP11 = gsap.fromTo(".page-11-fade", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut", delay: 0.3});
+var tweenP11 = gsap.fromTo(".page-11-fade", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut", delay: 0.2});
 
 var sceneP11 = new ScrollMagic.Scene({
   triggerElement: ".page-11",
@@ -193,7 +263,7 @@ var sceneP11 = new ScrollMagic.Scene({
 
 /* p12 기본 애니메이션 */
 
-var tweenP12 = gsap.fromTo(".page-12-fade", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut", delay: 0.2});
+var tweenP12 = gsap.fromTo(".page-12-fade", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut", delay: 0.1});
 
 var sceneP12 = new ScrollMagic.Scene({
   triggerElement: ".page-12",
