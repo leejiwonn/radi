@@ -60,6 +60,18 @@ var sceneP42 = new ScrollMagic.Scene({
     name: "42"
 });
 
+var tweenP43 = gsap.to(".page-4-background-image", {y: "40%", ease: Linear.easeNone});
+
+var sceneP43 = new ScrollMagic.Scene({
+  triggerElement: ".page-4",
+  duration: "100%"
+})
+.setTween(tweenP43)
+.addTo(controller)
+.addIndicators({
+    name: "43"
+});
+
 /* p5 기본 애니메이션 */
 
 var tweenP5 = gsap.fromTo(".page-5-fade", {y: 20, opacity: 0, duration: 1, ease: "sine.inOut"}, {y: 0, opacity: 1, duration: 0.8, ease: "sine.inOut"});

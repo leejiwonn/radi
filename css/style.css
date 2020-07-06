@@ -461,15 +461,20 @@ body {
   background-color: #000;
 }
 
+.page-4-parallax {
+  height: 100%;
+  overflow: hidden;
+}
+
 .page-4-background-image {
   width: 100%;
-  height: 100%;
+  height: 160%;
   background-image: url("../img/004_img_bg.png");
   background-size: cover;
-  background-position-y: center;
+  background-position: 50% 50%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -40%;
 }
 
 .page-4-mask {
