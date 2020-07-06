@@ -1,7 +1,7 @@
 import { recognizeSpeech, SpeechController, supportsSpeechRecognition } from './speech';
 import { playAudioWhenAvailable } from './audio';
 import { sleep } from './util';
-import { unlockBodyScroll } from './body-scroll';
+import { lockBodyScroll, unlockBodyScroll } from './body-scroll';
 import { scrollDownAnimation } from './rx';
 import { exhaustMap, share, takeUntil } from 'rxjs/operators';
 import { fromEvent, merge, Subject } from 'rxjs';
