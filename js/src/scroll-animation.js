@@ -90,8 +90,8 @@ var sceneP61 = new ScrollMagic.Scene({
 });
 
 var tweenP62 = gsap.timeline()
-  .to(".page6-slide-1", {x: 1200, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with")
-  .to(".page6-slide-2", {x: -1200, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with");
+  .to(".page6-slide-1", {x: 0, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with")
+  .to(".page6-slide-2", {x: 0, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with");
 
 var sceneP62 = new ScrollMagic.Scene({
   triggerElement: ".page-6",
@@ -104,8 +104,8 @@ var sceneP62 = new ScrollMagic.Scene({
 });
 
 var tweenP63 = gsap.timeline()
-  .to(".page6-slide-1", {x: 0, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
-  .to(".page6-slide-2", {x: 0, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
+  .to(".page6-slide-1", {x: -1200, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
+  .to(".page6-slide-2", {x: 1200, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
   .fromTo(".p6-ani-1", {opacity: 1, duration: 1, ease: "sine.inOut"}, {opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
   .fromTo(".page-6-textbox", {duration: 1, ease: "sine.inOut"}, {duration: 0.1, ease: "sine.inOut", delay: 1}, "with")
   .fromTo(".p6-ani-2", {opacity: 0, duration: 1, ease: "sine.inOut"}, {opacity: 1, duration: 0.8, ease: "sine.inOut", delay: 0.5}, "with");
