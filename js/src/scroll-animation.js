@@ -14,9 +14,9 @@ var sceneP2 = new ScrollMagic.Scene({
 })
 .setTween(tweenP2)
 .addTo(controller)
-.addIndicators({
-    name: "2"
-});
+// .addIndicators({
+//     name: "2"
+// });
 
 /* p3 기본 애니메이션 */
 
@@ -28,9 +28,9 @@ var sceneP3 = new ScrollMagic.Scene({
 })
 .setTween(tweenP3)
 .addTo(controller)
-.addIndicators({
-    name: "3"
-});
+// .addIndicators({
+//     name: "3"
+// });
 
 /* p4 기본 및 텍스트 애니메이션 */
 
@@ -42,9 +42,9 @@ var sceneP41 = new ScrollMagic.Scene({
 })
 .setTween(tweenP41)
 .addTo(controller)
-.addIndicators({
-    name: "41"
-});
+// .addIndicators({
+//     name: "41"
+// });
 
 var tweenP42 = gsap.timeline()
   .fromTo(".ani-4-1", {y: 0, opacity: 1, duration: 1, ease: "sine.inOut"}, {y: -100, opacity: 0, duration: 0.8, ease: "sine.inOut"}, "with")
@@ -56,9 +56,9 @@ var sceneP42 = new ScrollMagic.Scene({
 })
 .setTween(tweenP42)
 .addTo(controller)
-.addIndicators({
-    name: "42"
-});
+// .addIndicators({
+//     name: "42"
+// });
 
 var tweenP43 = gsap.to(".page-4-background-image", {y: "40%", ease: Linear.easeNone});
 
@@ -68,9 +68,9 @@ var sceneP43 = new ScrollMagic.Scene({
 })
 .setTween(tweenP43)
 .addTo(controller)
-.addIndicators({
-    name: "43"
-});
+// .addIndicators({
+//     name: "43"
+// });
 
 /* p5 기본 애니메이션 */
 
@@ -82,9 +82,9 @@ var sceneP5 = new ScrollMagic.Scene({
 })
 .setTween(tweenP5)
 .addTo(controller)
-.addIndicators({
-    name: "5"
-});
+// .addIndicators({
+//     name: "5"
+// });
 
 /* p6 기본 및 이미지 애니메이션 */
 
@@ -97,9 +97,9 @@ var sceneP61 = new ScrollMagic.Scene({
 })
 .setTween(tweenP61)
 .addTo(controller)
-.addIndicators({
-    name: "61"
-});
+// .addIndicators({
+//     name: "61"
+// });
 
 var tweenP62 = gsap.timeline()
   .to(".page6-slide-1", {x: 1200, opacity: 1, duration: 1.3, ease: "sine.inOut"}, "with")
@@ -111,9 +111,9 @@ var sceneP62 = new ScrollMagic.Scene({
 })
 .setTween(tweenP62)
 .addTo(controller)
-.addIndicators({
-    name: "62"
-});
+// .addIndicators({
+//     name: "62"
+// });
 
 var tweenP63 = gsap.timeline()
   .to(".page6-slide-1", {x: 0, opacity: 0, duration: 1.3, ease: "sine.inOut"}, "with")
@@ -128,9 +128,9 @@ var sceneP63 = new ScrollMagic.Scene({
 })
 .setTween(tweenP63)
 .addTo(controller)
-.addIndicators({
-    name: "63"
-});
+// .addIndicators({
+//     name: "63"
+// });
 
 /* p7 circle 애니메이션 */
 
@@ -146,9 +146,9 @@ var sceneP7 = new ScrollMagic.Scene({
 })
 .setTween(tweenP7)
 .addTo(controller)
-.addIndicators({
-    name: "7"
-});
+// .addIndicators({
+//     name: "7"
+// });
 
 /* p8 기본 애니메이션 */
 
@@ -160,9 +160,9 @@ var sceneP8 = new ScrollMagic.Scene({
 })
 .setTween(tweenP8)
 .addTo(controller)
-.addIndicators({
-    name: "8"
-});
+// .addIndicators({
+//     name: "8"
+// });
 
 /* p9 기본 애니메이션 */
 
@@ -179,9 +179,9 @@ var sceneP91 = new ScrollMagic.Scene({
 })
 .setTween(tweenP91)
 .addTo(controller)
-.addIndicators({
-    name: "91"
-});
+// .addIndicators({
+//     name: "91"
+// });
 
 var tweenP92 = gsap.timeline()
   .fromTo(".p9-ani-1", {y: 0, duration: 0.8, ease: "sine.inOut"}, {y: -800, duration: 1, ease: "sine.inOut"}, "with")
@@ -195,9 +195,9 @@ var sceneP92 = new ScrollMagic.Scene({
 })
 .setTween(tweenP92)
 .addTo(controller)
-.addIndicators({
-    name: "92"
-});
+// .addIndicators({
+//     name: "92"
+// });
 
 var tweenP93 = gsap.timeline()
   .fromTo(".p9-ani-1", {y: -800, duration: 0.8, ease: "sine.inOut"}, {y: -1550, duration: 1, ease: "sine.inOut"}, "with")
@@ -211,9 +211,9 @@ var sceneP93 = new ScrollMagic.Scene({
 })
 .setTween(tweenP93)
 .addTo(controller)
-.addIndicators({
-    name: "93"
-});
+// .addIndicators({
+//     name: "93"
+// });
 
 var tweenP94 = gsap.timeline()
   .fromTo(".p9-ani-1", {y: -1550, duration: 0.8, ease: "sine.inOut"}, {y: -2300, duration: 1, ease: "sine.inOut"}, "with")
@@ -227,9 +227,9 @@ var sceneP94 = new ScrollMagic.Scene({
 })
 .setTween(tweenP94)
 .addTo(controller)
-.addIndicators({
-    name: "94"
-});
+// .addIndicators({
+//     name: "94"
+// });
 
 /* p10 기본 애니메이션 */
 
@@ -241,9 +241,9 @@ var sceneP10 = new ScrollMagic.Scene({
 })
 .setTween(tweenP10)
 .addTo(controller)
-.addIndicators({
-    name: "10"
-});
+// .addIndicators({
+//     name: "10"
+// });
 
 /* p11 기본 애니메이션 */
 
@@ -255,9 +255,9 @@ var sceneP11 = new ScrollMagic.Scene({
 })
 .setTween(tweenP11)
 .addTo(controller)
-.addIndicators({
-    name: "11"
-});
+// .addIndicators({
+//     name: "11"
+// });
 
 /* p12 기본 애니메이션 */
 
@@ -269,9 +269,9 @@ var sceneP12 = new ScrollMagic.Scene({
 })
 .setTween(tweenP12)
 .addTo(controller)
-.addIndicators({
-    name: "12"
-});
+// .addIndicators({
+//     name: "12"
+// });
 
 }
   
