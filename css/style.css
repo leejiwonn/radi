@@ -669,7 +669,7 @@ body {
 /* ----- page 8 ----- */
 
 .page-8 {
-  background-color: #fff;
+  background-color: #FBFBFB;
 }
 
 .page-8-title {
@@ -713,12 +713,12 @@ body {
 
 .page-8-image {
   display: block;
-  width: 881px;
-  height: 660px;
+  width: 1281px;
+  height: 760px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 30px;
+  bottom: 0;
 }
 
 /* ----- page 9 ----- */
@@ -839,12 +839,12 @@ body {
 
 .page-10-image {
   display: block;
-  width: 802px;
-  height: 596px;
+  width: 1232px;
+  height: 710px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 30px;
+  bottom: 0;
 }
 
 /* ----- page 11 ----- */
