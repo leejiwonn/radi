@@ -15,7 +15,7 @@ body {
 
 .page {
   width: 100%;
-  min-height: 1080px;
+  height: 1080px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -160,7 +160,7 @@ body {
   justify-content: center;
   left: 0;
   right: 0;
-  bottom: 42px;
+  bottom: 82px;
 }
 
 .page1-skipbutton {
@@ -313,10 +313,12 @@ body {
 
 .page-2-right {
   display: block;
+  position: absolute;
+  right: 100px;
 }
 
 .page-2-right > img {
-  width: 477px;
+  width: 960px;
 }
 
 /* ----- page 3 ----- */
@@ -689,11 +691,32 @@ body {
   color: #707070;
 }
 
+.page-8-bottom {
+  width: 1000px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-8-bottom > .page-9-image {
+  width: 778px;
+  height: 662px;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
 .page-8-image {
   display: block;
   width: 881px;
   height: 660px;
-  margin: 40px auto 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
 }
 
 /* ----- page 9 ----- */
@@ -816,7 +839,10 @@ body {
   display: block;
   width: 802px;
   height: 596px;
-  margin: 100px auto 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
 }
 
 /* ----- page 11 ----- */
@@ -827,6 +853,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 500px;
 }
 
 .page-11-title {
@@ -835,7 +862,7 @@ body {
   line-height: 1.25;
   color: #fff;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .download-btn {
@@ -847,8 +874,10 @@ body {
 .download-btn > button {
   width: 50%;
   height: 100%;
+  line-height: 4px;
   background-color: #2d2d2d;
-  border-top: 1px solid #707070;
+  border-top: 4px solid #fff;
+  border-bottom: 1px solid #4B4B4B;
   font-size: 24px;
   color: #ffffff;
   padding: 50px 0;
@@ -862,6 +891,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 1080px;
 }
 
 .page-12-title {
