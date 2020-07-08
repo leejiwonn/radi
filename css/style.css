@@ -263,6 +263,7 @@ body {
 
 .page-2 {
   background-color: #000000;
+  height: 1294px;
 }
 
 .page-2-wrapper {
@@ -314,6 +315,7 @@ body {
 .page-2-right {
   display: block;
   position: absolute;
+  bottom: 0;
   right: 100px;
 }
 
